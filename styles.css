@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(19, 132, 231);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 105vh;
+    padding: 2rem 4rem;
+
+}
+.image-container{
+    width: 40%;
+    height: 80vh;
+    
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+
+
+}
+.text-container{
+    width: 50%;
+    
+}
+.text-container h1{
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 2;
+    font-weight: 600;
+    text-align: center;
+}
+.countdown-text{
+    line-height: 2;
+    font-size: 18px;
+
+}
+.countdown-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.lorem-para{
+    margin-top: 2rem;
+}
+.box{
+    background-color: black;
+    color: aliceblue;
+    width: 25%;
+    text-align: center;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+.box h1{
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+@media screen and (max-width: 1008px) {
+
+.text-container h1{
+    font-size: 24px;
+}
+}
+@media screen and (max-width: 940px) {
+
+.text-container h1{
+    font-size: 22px;
+}
+}
+@media screen and (max-width: 905px) {
+ .container{
+    flex-direction: column;
+ }
+ .image-container{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 2rem;
+ }
+ .image-container img{
+    border-radius: 10px;
+ }
+ .text-container{
+    width: 100%;
+ }
+ .text-container h1{
+    font-size: 26px;
+}
+}
+@media screen and (max-width:870px) {
+    .countdown-text{
+        font-size: 16px;
+        text-align: center;
+        line-height: normal;
+    }
+    .lorem-para{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:500px) {
+        .text-container h1{
+            font-size: 20px;
+            line-height: normal;
+            margin-bottom: .4rem;
+        }
+        .lorem-para{
+            text-align: center;
+        }
+        .box h1{
+            font-size: 20px;
+        }
+        .box p{
+            font-size: 14px;
+        }
+        .container{
+            padding: 1rem 2rem;
+            height: 750px;
+        }
+        .countdown-box{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .box{
+            padding: 1rem;
+        }
+        
+}
+@media screen and (max-width:380px) {
+    .box p{
+       font-size: 12px;
+    }
+
+}
